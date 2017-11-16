@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Create Contact</title>
+
+        <style>
+            body{
+            background-image: url('img/bgimg.jpg');
+            background-size: 600px;
+            background:url('img/bgimg.jpg') no-repeat ;
+            background-size: 600px;
+        }
+            input:optional{
+                background-image: url("img/piece.png");
+                color: black;
+            }
+        </style>
+        
+    </head>
+    <body>
+    <style>
+            div:nth-child(odd){
+                background-color: red;
+                color: yellow;
+            }
+            div:nth-child(even){
+                background-color: black;
+                color: white;
+        </style>
+        <div>
+            <h1><b>PHONE CONTACT</b></h1>
+            <div class="blink">
+                <center><p class="event listening">Create New</p></center>
+            </div>
+        </div>
+        <a><a href="Select.html"><button style="color: black; height: 30px; width: 50px;" ><<-</button></a></a>
+        <br><br><br><br><br><br><br>
+        <mark><input type="text" id="field_text" placeholder="Firstname" style="height: 25px;  ">
+        <br><b><mark>Firstname is: </mark></b><span id='input_text'></span><br><br></mark>
+        <script type="text/javascript" src='js/diether.js'></script>
+
+        <mark><input type="text" id="field_text1" placeholder="Lastname" style="height: 25px;"><br>
+        <b><mark>Lastname is: </mark></b><span id='input_text1'></span><br><br></mark>
+        <script type="text/javascript" src='js/temple.js'></script>
+
+        <mark><input type="number" id="field_number" placeholder="Phone Number" style="height: 25px;"><br>
+        <b><mark>Number: </mark></b><span id='input_number'></span><br><br></mark>
+        <script type="text/javascript" src='js/eric.js'></script>
+
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <center><a><a href="CreateContact.html"><button style="color: red; height: 35px; width: 180px;" >Cancel</button></a></a><a><a href="ContactSaved.html"><button style="color: blue; height: 35px; width: 180px;">Done</button></a></a></center>
+        
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
